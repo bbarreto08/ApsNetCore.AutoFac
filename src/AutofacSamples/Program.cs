@@ -46,16 +46,20 @@ namespace AutofacSamples
         public void Go()
         {
             engine.Ahead(100);
-            log.Write("Car goiig forward...");
+            log.Write("Car going forward...");
         }
     }
 
 
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var log = new ConsoleLog();
+            var engine = new Engine(log);
+            var car = new Car(engine, log);
+
+            car.Go();
         }
     }
 }
