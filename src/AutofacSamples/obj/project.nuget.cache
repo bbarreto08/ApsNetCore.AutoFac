@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5iPgLqSB/saN/UqBi6X/+ELNMmifEblMmcSap/Ng+vIwLGV3mNrGZC2aKbpTJjnP1j/paZatmHj8snrUuslhuw==",
+  "dgSpecHash": "PnTY1c+OrCHJtgU/OKv6UCwm1w+xsMqwBkZU4TfZzkjY7xJypCDIuunc+iU++P3kOcWZhP0pga/9+G0eB5yWRQ==",
   "success": true,
   "projectFilePath": "D:\\GitPessoal\\ApsNetCore.AutoFac\\ApsNetCore.AutoFac\\src\\AutofacSamples\\AutofacSamples.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Estudos\\.nuget\\packages\\autofac\\6.1.0\\autofac.6.1.0.nupkg.sha512",
+    "C:\\Users\\Estudos\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+  ],
   "logs": []
 }

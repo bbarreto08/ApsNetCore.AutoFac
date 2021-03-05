@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Autofac;
+using System;
 
 namespace AutofacSamples
 {
@@ -50,15 +51,18 @@ namespace AutofacSamples
         }
     }
 
-
     internal class Program
     {
         static void Main(string[] args)
         {
-            var log = new ConsoleLog();
-            var engine = new Engine(log);
-            var car = new Car(engine, log);
+            var builder = new ContainerBuilder();
+            builder.RegisterType<ConsoleLog>().As<ILog>().AsSelf();
+            builder.RegisterType<Engine>();
+            builder.RegisterType<Car>();
 
+            IContainer container = builder.Build();
+
+            var car = container.Resolve<Car>();
             car.Go();
         }
     }
